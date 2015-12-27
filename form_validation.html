@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    
+    <body>
+        <div id="container">
+            <h2>Client-side form validation using JavaScript</h2>
+            
+            <div class="error" id="error"></div>
+            <form method="POST" onsubmit="return validate(this)">
+                <div>
+                    <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" />
+                </div>
+                    
+                <div>    
+                    <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" />
+                </div>
+                    
+                <div>    
+                    <label for="password">Password</label>
+                        <input type="password" name="pass" id="password" />
+                </div>
+                
+                <div>
+                    <label for="repassword">Retype Password</label>
+                        <input type="password" name="repass" id="repassword" />
+                </div>
+                    
+                <div>
+                    <label for="email">Email</label>
+                        <input type="text" name="email" id="email" />
+                </div>
+                
+                <div>
+                    <!--    
+                    <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" />
+                    -->  
+                    <label for="gender">Gender</label>
+                        <input type="radio" name="gender" value="M" id="gender" /><span>Male</span>
+                        <input type="radio" name="gender" value="F" /><span>Female</span>
+                </div>
+                
+                <div>        
+                    <label for="region">Development Region</label>
+                        <select name="region" id="region">
+                            <option value="">----SELECT YOUR REGION----</option>
+                            <option value="ER">Eastern Region</option>
+                            <option value="CR">Central Region</option>
+                            <option value="WR">Western Region</option>
+                            <option value="MWR">Mid-Western Region</option>
+                            <option value="FWR">Far-Western Region</option>
+                        </select>
+                </div>
+               
+                <div>    
+                    <label for="lang">Language Spoken</label>
+                        <input type="checkbox" name="lang" value="nepali" id="lang" /><span>Nepali</span>
+                        <input type="checkbox" name="lang" value="bhojpuri" /><span>Bhojpuri</span>
+                        <input type="checkbox" name="lang" value="maithili" /><span>Maithili</span>
+                        <input type="checkbox" name="lang" value="newari" /><span>Newari</span>
+                        <input type="checkbox" name="lang" value="english" /><span>English</span>
+                </div>
+                
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" rows="10" cols="25" id="message"></textarea> 
+                <div class="submit">    
+                    <input type="submit" name="submit" value="SUBMIT" />
+                </div>
+            </form>
+        </div>
+        
+        <script type="text/javascript" src="js/form_validation.js"></script>
+    </body>
+</html>
